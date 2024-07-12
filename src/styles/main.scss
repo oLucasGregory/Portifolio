@@ -1,0 +1,31 @@
+@use 'variaveis';
+@use 'hero';
+@use 'portifolio';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    background-color: variaveis.$corFundo ;
+}
+
+@mixin text(){
+    font-size: 2em;
+    line-height: normal;
+    color: variaveis.$corTextoSecundario;
+}
+@mixin title(){
+    font-size: 3em;
+    font-weight: bold;
+    color: variaveis.$corTextoPrincipal;
+    
+}
+.text{
+    @include text()
+}
+.title{
+    @include title()
+}

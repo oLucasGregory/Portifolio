@@ -1,0 +1,45 @@
+.portifolio{
+    padding:  5.6vw;
+    min-height: 50vw;
+    h2{
+        text-align: center;
+        padding-bottom: 32px;
+        @media (max-width: 768px){
+            font-size: 32px;
+        }
+    }
+    &__list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+        @media (max-width: 768px){
+            grid-template-columns: 1fr 1fr;
+        }
+        &--item{
+            
+           a{
+            text-decoration: none;
+            
+            img{
+                max-width: 100%;
+                border-radius: 4px;
+                transition: transform .2s;
+                &:hover{
+                    transform: scale(1.025);
+                }
+                
+            }
+            p{
+                text-align: center;
+               padding-top: 16px;
+               @media (max-width: 768px){
+                font-size: 16px;
+               }
+                
+            }
+        } 
+        }
+        
+        
+        }
+}
