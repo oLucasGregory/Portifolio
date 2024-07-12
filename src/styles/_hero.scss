@@ -9,7 +9,9 @@
         background-image: url(../images/hero_celular.jpg);
         background-repeat: no-repeat;
         background-size: contain;
-        min-height: 75vh;
+        padding-top: calc(50vw + 25px) ;
+        min-height: 70vh;
+        
         
     }
     &__content{
@@ -20,7 +22,7 @@
             font-size: 2em;
             @media (max-width: 768px){
                 font-size: 1em;
-                margin-top: 250px;
+                margin-top: 80px;
             }
         }
         &__links{
