@@ -1,11 +1,12 @@
 .portifolio{
     padding:  5.6vw;
-    min-height: 50vw;
+    min-height: 100vh;
     h2{
         text-align: center;
         padding-bottom: 64px;
         @media (max-width: 768px){
             font-size: 32px;
+           
         }
     }
     &__list{
@@ -13,7 +14,7 @@
         grid-template-columns: 1fr 1fr 1fr;
         gap: 24px;
         @media (max-width: 768px){
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
         }
         &--item{
             

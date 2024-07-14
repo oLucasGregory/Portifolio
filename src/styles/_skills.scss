@@ -1,0 +1,39 @@
+.skills{
+    padding: 5.6vh;
+    min-height: 100vh;
+    position: relative;
+    
+    h2{
+        text-align: center;
+        @media (max-width: 768px){
+            font-size: 32px;
+            
+        }
+        
+    }
+    &__list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 64px;
+        position: absolute;
+        top: 50%;
+         left: 50%;
+        transform: translate(-50%, -50%);
+        
+        @media (max-width: 768px){
+            grid-template-columns: 1fr 1fr;
+            transform: translate(-50%, -45%);
+        }
+        
+        &__icon{
+            
+            img{
+                width: 100px;
+                @media (max-width: 768px){
+                    width: 60px;
+                }
+                
+            }
+        }
+    }
+}
